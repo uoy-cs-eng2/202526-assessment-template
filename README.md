@@ -1,4 +1,4 @@
-# ENG2 2025-26 model solution
+# ENG2 2025-26 starting template
 
 Starting code for smart home using reactive computation assessment.
 
