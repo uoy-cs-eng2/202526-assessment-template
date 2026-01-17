@@ -1,6 +1,6 @@
 # ENG2 2025-26 model solution
 
-Model solution for smart home using reactive computation assessment.
+Starting code for smart home using reactive computation assessment.
 
 ## Configuration for Docker Engine 29
 
