@@ -2,7 +2,7 @@
 
 set -e
 
-for i in dummyRates iot reactive; do
+for i in rates iot reactive; do
   pushd "$i"
   ./gradlew build dockerBuild
   popd
