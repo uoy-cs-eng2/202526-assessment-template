@@ -1,6 +1,6 @@
 # ENG2 2025-26 starting template
 
-Starting code for smart home using reactive computation assessment.
+Starting code for an assessment on creating reactive computation components to implement a home automation scenario.
 
 ## Configuration for Docker Engine 29
 
