@@ -31,12 +31,14 @@ jobs:
     # Try building each microservice, including the Dummy Rates one
     - name: Build Dummy Rates microservice
       run: cd microservices/rates && ./gradlew test
-    - name: Build IoT microservice
-      run: cd microservices/iot && ./gradlew test
-    - name: Build Reactive microservice
-      run: cd microservices/reactive && ./gradlew test
 
-    # Uncomment to run the end-to-end tests
+    # Uncomment these entries when you have their first versions ready to test
+    #- name: Build IoT microservice
+    #  run: cd microservices/iot && ./gradlew test
+    #- name: Build Reactive microservice
+    #  run: cd microservices/reactive && ./gradlew test
+
+    # Uncomment to run the end-to-end tests once they are ready
     #- name: Run end-to-end tests
     #  run: cd microservices && ./run-tests.sh
   
