@@ -9,3 +9,10 @@ Until [this issue](https://github.com/micronaut-projects/micronaut-test-resource
 ```shell
 echo api.version=1.44 > $HOME/.docker-java.properties
 ```
+
+## CI for Part 1
+
+The repository includes a [Github CI YAML](./.github/workflows/gradle.yml) workflow file with the basic commands needed to perform continuous integration on the Part 1 work.
+
+Some of the entries are commented out, as they will only work once you have done sufficient work on the microservices and/or the end-to-end tests.
+We suggest you uncomment them when appropriate.
