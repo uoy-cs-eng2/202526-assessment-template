@@ -2,9 +2,17 @@
 
 Starting code for an assessment on creating reactive computation components to implement a home automation scenario.
 
-## Configuration for Docker Engine 29
+## Configuration for Docker Engine 29+
 
-Until [this issue](https://github.com/micronaut-projects/micronaut-test-resources/issues/941) is fixed, you will need to manually tell Testcontainers which Docker API version to use:
+If Docker Desktop is running normally and you see this error message while trying to run tests or start the application:
+
+```
+Caused by: java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+```
+
+Then you may be affected by [this issue](https://github.com/micronaut-projects/micronaut-test-resources/issues/941).
+Until it is fixed, you will need to manually tell Testcontainers which Docker API version to use.
+On a Linux/Mac environment, you will need to use:
 
 ```shell
 echo api.version=1.44 > $HOME/.docker-java.properties
