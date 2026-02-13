@@ -24,6 +24,9 @@ From PowerShell on Windows, you would instead run:
 "api.version=1.44" | set-content $HOME/.docker-java.properties -Encoding Ascii
 ```
 
+Note that the failure to start Docker may be cached by the Micronaut Test Resources Gradle plugin.
+To reset this cache, run the `stopTestResourcesService` Gradle task.
+
 ## CI for Part 1
 
 The repository includes a [Github CI YAML](./.github/workflows/gradle.yml) workflow file with the basic commands needed to perform continuous integration on the Part 1 work.
