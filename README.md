@@ -12,10 +12,16 @@ Caused by: java.lang.IllegalStateException: Could not find a valid Docker enviro
 
 Then you may be affected by [this issue](https://github.com/micronaut-projects/micronaut-test-resources/issues/941).
 Until it is fixed, you will need to manually tell Testcontainers which Docker API version to use.
-On a Linux/Mac environment, you will need to use:
+From a Bash terminal (Linux / Mac / Git Bash on Windows), you will need to run:
 
 ```shell
 echo api.version=1.44 > $HOME/.docker-java.properties
+```
+
+From PowerShell on Windows, you would instead run:
+
+```shell
+"api.version=1.44" | set-content $HOME/.docker-java.properties -Encoding Ascii
 ```
 
 ## CI for Part 1
