@@ -13,7 +13,7 @@ import org.osgi.framework.BundleContext;
  */
 public class Activator extends AbstractUIPlugin {
     // The plug-in ID
-    public static final String PLUGIN_ID = "uk.ac.york.cs.eng2.reactive.viewpoint";
+    public static final String PLUGIN_ID = "uk.ac.york.cs.eng2.rcl.viewpoint";
 
     // The shared instance
     private static Activator plugin;
